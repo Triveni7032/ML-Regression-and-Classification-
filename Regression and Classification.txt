@@ -1,0 +1,146 @@
+# Regression and Classification in Machine Learning
+
+Regression and Classification are two important types of **Supervised Machine Learning**.
+
+```text
+Supervised Learning
+       ↓
+ ┌───────────────┐
+ ↓               ↓
+Regression   Classification
+1. Regression
+
+Regression is used to predict a continuous numerical value.
+
+Examples:
+
+Predict house price
+Predict salary
+Predict temperature
+Predict stock price
+
+Example:
+
+Input:
+Area + Bedrooms + Location
+
+        ↓
+    ML Model
+        ↓
+House Price = ₹50,00,000
+
+The output is a numerical value.
+
+2. Simple Regression Example
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+
+model.fit(X_train, y_train)
+
+prediction = model.predict(X_test)
+
+Here, the model learns the relationship between features and a continuous target.
+
+3. Common Regression Algorithms
+Linear Regression
+↓
+Decision Tree Regression
+↓
+Random Forest Regression
+↓
+Polynomial Regression
+4. Classification
+
+Classification is used to predict a category or class.
+
+Examples:
+
+Spam / Not Spam
+Pass / Fail
+Disease / No Disease
+Fraud / Not Fraud
+
+Example:
+
+Input:
+Study Hours + Attendance + Marks
+
+        ↓
+    ML Model
+        ↓
+       Pass
+
+The output belongs to a category.
+
+5. Simple Classification Example
+from sklearn.linear_model import LogisticRegression
+
+model = LogisticRegression()
+
+model.fit(X_train, y_train)
+
+prediction = model.predict(X_test)
+6. Common Classification Algorithms
+Logistic Regression
+↓
+Decision Tree Classifier
+↓
+Random Forest Classifier
+↓
+K-Nearest Neighbors (KNN)
+↓
+Support Vector Machine (SVM)
+7. Regression vs Classification
+Regression	Classification
+Predicts numerical values	Predicts categories
+Continuous output	Discrete output
+Example: Salary	Example: Pass/Fail
+Example: House Price	Example: Spam/Not Spam
+8. Real-World Examples
+Regression
+Area
+Bedrooms
+Location
+   ↓
+House Price
+Classification
+Email Content
+   ↓
+Spam / Not Spam
+9. How to Identify the Problem?
+
+Ask:
+
+Do I need to predict a number?
+        ↓
+      YES
+        ↓
+    Regression
+
+Do I need to predict a category?
+        ↓
+      YES
+        ↓
+  Classification
+10. Quick Summary
+Regression
+↓
+Predict a numerical value
+
+Classification
+↓
+Predict a category
+
+Regression Example
+↓
+Predict Salary
+
+Classification Example
+↓
+Predict Pass/Fail
+Conclusion
+
+Regression and Classification are fundamental supervised Machine Learning techniques.
+
+Use Regression when the target is a continuous numerical value and Classification when the target represents a category or class.
